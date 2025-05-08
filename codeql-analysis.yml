@@ -1,8 +1,0 @@
-- name: Run Semgrep
-  run: |
-    semgrep --config=auto --output=results.sarif --sarif
-
-- name: Upload SARIF to GitHub
-  uses: github/codeql-action/upload-sarif@v3
-  with:
-    sarif_file: results.sarif
